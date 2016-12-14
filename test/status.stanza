@@ -1,0 +1,3 @@
+<message from='romeo@montague.lit' to='juliet@capulet.com' id='msg_1'>
+<status>This is a status update</status>
+</message>

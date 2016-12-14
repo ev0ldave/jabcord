@@ -1,0 +1,13 @@
+version: '2'
+services:
+  relaybot:
+    build: .
+    command: /bin/sh -c 'cd /bot && node lib/app.js'
+    environment:
+      - DISCORD_API_TOKEN=your_discord_bot_token
+      - DISCORD_CHATROOM_ID=your_discord_chatroom_id
+      - XMPP_JID=user@some.domain
+      - XMPP_HOST=some.domain
+      - XMPP_PASSWORD=secrete
+    volumes:
+      - ./:/bot
